@@ -83,3 +83,17 @@ native-country: quốc gia
 
 kết quả trả về : >50K, <=50K.
 '''
+workclass ={"Private":1,
+            "Self-emp-not-inc":0,
+            "Self-emp-inc":1,
+            "Federal-gov":2,
+            "Local-gov":2,
+            "State-gov":2,
+            "Without-pay":0,
+            "Never-worked":0}
+data["workclass"] = data["workclass"].replace(workclass)
+
+gender = {"Female":0,"Male":1}
+data["gender"]=data["gender"].replace(gender) 
+
+#marital-status
